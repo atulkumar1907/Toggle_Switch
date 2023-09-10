@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Poppins:wght@500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: belanosima;
+    font-weight: 400;
+}
+
+:root{
+    --default-margin: 20px;
+    --primary-text-color: #222;
+    --secondary-text-color: #444;
+    --background-color: #ecebeb;
+    --card-background-color: #fff;
+}
+
+.dark{
+    --primary-text-color: #eee;
+    --secondary-text-color: #fff;
+    --background-color: #222;
+    --card-background-color: #444;
+}
+
+.container{
+    min-height: 100vh;
+    padding: 40px;
+    background-color: var(--background-color);
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: var(--default-margin);
+    color: var(--primary-text-color);
+}
+
+.box{
+    border-radius: var(--default-margin);
+    margin: var(--default-margin);
+    background-color: var(--card-background-color);
+    padding: var(--default-margin);
+    width: 70vw;
+    max-width: 900px;
+    margin-inline: auto;
+}
+
+.box .heading{
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+}
+
+.box p{
+    color: var(--secondary-text-color);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--primary-text-color);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--primary-text-color);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
